@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfólio de Augusto Bento Correia</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Augusto Bento Correia</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#projetos">Meus Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre">
+        <div class="content-wrapper">
+            <h2>Sobre Mim</h2>
+            <!-- Adicionando a imagem -->
+            <div class="imagem-container">
+                <img src="Augusto.jpg" alt="Imagem de Augusto Bento Correia" class="imagem-augusto">
+            </div>
+            <p>Olá, meu nome é Augusto Bento Correia. Sou um programador apaixonado por criar soluções tecnológicas inovadoras. Com 16 anos e cursando o ensino técnico em Informática, já desenvolvi diversos projetos que refletem meu interesse e habilidade em HTML, CSS, e programação em geral.</p>
+            <p>Minhas habilidades incluem Desenvolvimento Web (HTML, CSS), estilização de sites, e programação em Portugol. Também possuo experiência na criação de jogos utilizando o Scratch.</p>
+            <p>Estou sempre em busca de novos desafios e oportunidades para aprender, com o objetivo de me tornar um desenvolvedor full-stack e ajudar empresas a se destacarem online.</p>
+        </div>
+    </section>
+    <!-- Seção Projetos -->
+    <section id="projetos">
+        <div class="content-wrapper">
+            <h2>Meus Projetos</h2>
+
+            <!-- Projetos de Sites -->
+            <div class="projeto" onclick="abrirModal('modal1')">
+                <h3>Site 1: Dicionário</h3>
+                <p>Este projeto de site foi desenvolvido como parte de um trabalho escolar para criar um dicionário online. O objetivo era ajudar usuários a encontrar definições de palavras rapidamente. Utilizamos HTML e CSS para criar uma interface amigável e intuitiva, garantindo uma experiência de usuário eficiente.</p>
+            </div>
+            <div class="projeto" onclick="abrirModal('modal2')">
+                <h3>Site 2: Social Web</h3>
+                <p>O Social Web é um site criado para um trabalho escolar que explora o poder das redes sociais no mercado de trabalho. Foi desenvolvido com um design moderno e responsivo utilizando HTML e CSS, focando na experiência do usuário e na estética visual.</p>
+            </div>
+
+           <!-- Projetos de Jogos -->
+<div class="projeto" onclick="abrirModal('modal3')">
+    <h3>Jogo 1: Cavaleiro de Ferro</h3>
+    <p>Desenvolvido no Scratch, "Cavaleiro de Ferro" é um emocionante jogo de perguntas e respostas baseado em uma cantiga de amigo, projetado como parte de um trabalho escolar sobre trovadorismo. Os jogadores enfrentam desafios relacionados à poesia trovadoresca enquanto exploram uma narrativa envolvente sobre um cavaleiro em uma jornada épica.</p>
+</div>
+<div class="projeto" onclick="abrirModal('modal4')">
+    <h3>Jogo 2: Jogo de Artes</h3>
+    <p>Desenvolvido no Scratch, o "Jogo de Artes" é um envolvente quebra-cabeça interativo que desafia o jogador a reconstruir imagens de obras-primas icônicas, como "Mona Lisa" e "O Grito". Cada nível apresenta uma obra dividida em peças que devem ser recombinadas, oferecendo uma experiência que combina diversão e aprendizado. O jogo proporciona informações fascinantes sobre os artistas e suas criações enquanto o jogador avança, tornando-o uma experiência educativa e divertida para todas as idades.</p>
+</div>
+
+    </section>
+
+    <!-- Modais dos Projetos -->
+    <!-- Modal do Projeto de Site 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModal('modal1')">&times;</span>
+            <h3>Detalhes do Site 1: Dicionário</h3>
+            <p>Este dicionário online foi desenvolvido como parte de um trabalho escolar para oferecer uma ferramenta prática para estudantes e profissionais. A estrutura do site é simples e direta, facilitando a navegação e a busca por definições. Utilizamos HTML e CSS para garantir um layout limpo e eficiente.</p>
+        </div>
+    </div>
+
+    <!-- Modal do Projeto de Site 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModal('modal2')">&times;</span>
+            <h3>Detalhes do Site 2: Social Web</h3>
+            <p>O Social Web foi desenvolvido como parte de um projeto escolar para explorar como as redes sociais podem impactar positivamente o mercado de trabalho. Desenvolvido com HTML e CSS, o site possui um design responsivo e moderno, focando na estética visual e na usabilidade para atrair e engajar o público-alvo.</p>
+        </div>
+    </div>
+
+    <!-- Modal do Jogo 1 -->
+    <div id="modal3" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModal('modal3')">&times;</span>
+            <h3>Detalhes do Jogo 1: Cavaleiro de Ferro</h3>
+            <p>Cavaleiro de Ferro é um jogo de ação emocionante criado como parte de um trabalho escolar, onde o jogador deve superar desafios e inimigos em um cenário medieval. O jogo foi criado no Scratch e oferece uma jogabilidade envolvente com gráficos simples, mas atraentes.</p>
+        </div>
+    </div>
+
+    <!-- Modal do Jogo 2 -->
+    <div id="modal4" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModal('modal4')">&times;</span>
+            <h3>Detalhes do Jogo 2: Jogo de Artes</h3>
+            <p>Desenvolvido no Scratch, o "Jogo de Artes" é um quebra-cabeça interativo que desafia você a montar imagens de obras famosas, como "Mona Lisa" e "O Grito". Cada nível apresenta uma obra dividida em peças que você deve recompor. O jogo combina diversão e aprendizado, oferecendo informações sobre os artistas e suas criações enquanto você avança.</p>
+        </div>
+    </div>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <div class="content-wrapper">
+            <h2>Contato</h2>
+            <p>Se você está interessado em saber mais sobre meus projetos ou gostaria de discutir uma possível colaboração, sinta-se à vontade para entrar em contato comigo através das seguintes informações:</p>
+            
+            <div class="contato-info">
+                <div class="contato-item">
+                    <p><strong>E-mail:</strong> <a href="mailto:augustobentocorreiabr@gmail.com">augustobentocorreiabr@gmail.com</a></p>
+                </div>
+                
+                <div class="contato-item">
+                    <p><strong>Telefone:</strong> <a href="tel:+5527995148626">(27) 99514-8626</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer>
+        <div class="content-wrapper">
+            <p>&copy; 2024 Augusto Bento Correia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
